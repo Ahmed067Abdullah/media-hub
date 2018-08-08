@@ -1,0 +1,61 @@
+@media screen and (max-width: 500px) {
+	 {
+	.nav {
+		position: relative;
+		min-height: 40px;
+		width:966px;
+			padding:0 83px 0px 83px;
+			float:left;
+			margin:16px 0 10px 0;
+	}	
+	.nav ul {
+		
+	
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		
+		border-radius: 5px;
+		
+	}
+	.nav li {
+		/*display: none;*/ 
+		/*margin: 0;*/
+	
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+	}
+	.nav a {
+		display: block;
+	/*	padding: 5px 5px 5px 32px;*/
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		
+	}
+
+	/* right nav */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.nav.center ul {
+	
+	}
