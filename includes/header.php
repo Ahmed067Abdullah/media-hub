@@ -21,8 +21,7 @@
     
     	<div class="section-left">
         	<ul>
-            	<li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="#">New Technology</a></li>
+            	<li><a href="sitemap.php">Sitemap</a></li>
                 <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@downloadcentrepro.com</a></li>
             </ul>
         </div>
@@ -45,7 +44,7 @@
     </div>
     </div>
     
-    <div class="header-middle container-fluid">
+    <!-- <div class="header-middle container-fluid">
     <div class="container">
     	<div class="section-left">
         	<div class="logo">
@@ -59,7 +58,7 @@
         	</div>
         </div>
     </div>
-    </div>
+    </div> -->
     
     <div class="header-bootom container-fluid">
     <div class="container">

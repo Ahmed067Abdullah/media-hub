@@ -8,7 +8,7 @@
         <div class="row">
             <?php
                 $counter = 0;
-                while($counter < 4){
+                while($counter < 14){
                 $game = <<<GAME
                 <div class="col-md-2">
                     <div class="item">
