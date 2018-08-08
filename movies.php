@@ -16,12 +16,12 @@
                     <div class="item-inner">
                     
                     <div class="item-img">
-                    <a href="single-item.html">
+                    <a href="single-item.php">
                         <img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                         </a>
                     </div>
                     <div class="item-info">
-                        <a href="single-item.html"><h1>Star Wars: The Force Awakens</h1></a>
+                        <a href="single-item.php"><h1>Star Wars: The Force Awakens</h1></a>
                         <p><b>Platform: </b>PC</p>
                         <p><b>Release Date: </b>22 Nov 2016</p>
                         <p><b>Language:</b> </strong>English</p>

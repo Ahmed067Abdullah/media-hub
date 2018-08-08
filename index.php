@@ -72,7 +72,7 @@
                 </div>
                 
                 <div class="section-right">
-                	<a href="games.html">VIEW MORE</a>
+                	<a href="games.php">VIEW MORE</a>
                 </div>
             
             </div>
@@ -82,113 +82,34 @@
             <div class="list-of-items">
             	
                 <div class="row">
-                	<div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="single-item-game.html">
-                            	<img src="img/Call-of-Duty-Modern-Warfare.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                <?php
+                $counter = 0;
+                while($counter < 5){
+                $game = <<<GAME
+                <div class="col-md-2">
+                    <div class="item">
+                        <div class="item-inner">
+                    
+                            <div class="item-img">
+                                <a href="#">
+                                    <img src="img/Call-of-Duty-Modern-Warfare.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="single-item-game.html"><h1>Call of Duty Modern Warfare</h1></a>
+                                <a href="#"><h1>Call of Duty Modern Warfare</h1></a>
                                 <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
+                                <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Shooter</p>
-                                
+                                <p><b>Genre: </b>Shooter</p>           
                             </div>
-                        </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/Call-of-Duty-Modern-Warfare.jpg" alt="Call of Duty Modern Warfare" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Call of Duty Modern Warfare</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Shooter</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/Call-of-Duty-Modern-Warfare.jpg" alt="Call of Duty Modern Warfare" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Call of Duty Modern Warfare</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Shooter</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/Call-of-Duty-Modern-Warfare.jpg" alt="Call of Duty Modern Warfare" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Call of Duty Modern Warfare</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Shooter</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/Call-of-Duty-Modern-Warfare.jpg" alt="Call of Duty Modern Warfare"/>
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Call of Duty Modern Warfare</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Shooter</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                
+                </div>
+GAME;
+                echo $game;
+                $counter++;
+                }
+                ?>
                 </div>
             
             
@@ -227,7 +148,7 @@
                 </div>
                 
                 <div class="section-right">
-                	<a href="movies.html">VIEW MORE</a>
+                	<a href="movies.php">VIEW MORE</a>
                 </div>
             
             </div>
@@ -237,115 +158,36 @@
             <div class="list-of-items">
             	
                 <div class="row">
-                	<div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="single-item.html">
-                            	<img src="img/star-wars.jpg" alt="cover"/>
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="single-item.html"><h1>Star Wars: The Force Awakens</h1></a>
-                                <p><b>Quality: </b>HD</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Action</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
+                <?php
+                $counter = 0;
+                while($counter < 5){
+                    $movie = <<<MOVIE
                     <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/star-wars.jpg" alt="cover" >
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
-                                <p><b>Quality: </b>HD</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Action</p>
-                                
-                            </div>
+                    <div class="item">
+                        <div class="item-inner">
+                        
+                        <div class="item-img">
+                        <a href="single-item.php">
+                            <img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            </a>
                         </div>
+                        <div class="item-info">
+                            <a href="single-item.php"><h1>Star Wars: The Force Awakens</h1></a>
+                            <p><b>Platform: </b>PC</p>
+                            <p><b>Release Date: </b>22 Nov 2016</p>
+                            <p><b>Language:</b> </strong>English</p>
+                            <p><b>Genre: </b>Shooter</p>
+                            
                         </div>
                     </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/star-wars.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
-                                <p><b>Quality: </b>HD</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Action</p>
-                                
-                            </div>
-                        </div>
-                        </div>
                     </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/star-wars.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
-                                <p><b>Quality: </b>HD</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Action</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/star-wars.jpg" alt="cover"/>
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
-                                <p><b>Quality: </b>HD</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Action</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                
                 </div>
-            
+MOVIE;
+                echo $movie;
+                $counter++;
+                }
+                ?>   
+                </div>
             
             </div>
         
@@ -380,7 +222,7 @@
                 </div>
                 
                 <div class="section-right">
-                	<a href="software.html">VIEW MORE</a>
+                	<a href="software.php">VIEW MORE</a>
                 </div>
             
             </div>
@@ -390,113 +232,35 @@
             <div class="list-of-items">
             	
                 <div class="row">
-                	<div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
+                <?php
+                    $counter = 0;
+                    while($counter < 5){
+                        $software = <<<SOFTWARE
+                        <div class="col-md-2">
+                        <div class="item">
+                            <div class="item-inner">
                             
-                        	<div class="item-img">
-                            <a href="single-item-software.html">
-                            	<img src="img/windows-10r.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="single-item-software.html"><h1>Windows 10</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Operating System</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
+                            <div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="cover" />
+                                <img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                                <a href="#"><h1>Windows 10</h1></a>
                                 <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
+                                <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Operating System</p>
+                                <p><b>Genre: </b>Shooter</p>
                                 
                             </div>
                         </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Operating System</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Operating System</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Operating System</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                
+SOFTWARE;
+                    echo $software;
+                    $counter++;
+                }    
+                ?>
                 </div>
             
             
@@ -534,7 +298,7 @@
                 </div>
                 
                 <div class="section-right">
-                	<a href="books.html">VIEW MORE</a>
+                	<a href="books.php">VIEW MORE</a>
                 </div>
             
             </div>
@@ -544,113 +308,35 @@
             <div class="list-of-items">
             	
                 <div class="row">
-                	<div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
+                <?php
+                    $counter = 0;
+                    while($counter < 5){
+                        $book = <<<BOOK
+                        <div class="col-md-2">
+                        <div class="item">
+                            <div class="item-inner">
                             
-                        	<div class="item-img">
-                            <a href="single-item-book.html">
-                            	<img src="img/book-cover.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="single-item-book.html"><h1>Breaking the Time Barrier</h1></a>
-                                <p><b>Pages: </b>70</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Business & Finance</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
+                            <div class="item-img">
                             <a href="#">
-                            	<img src="img/book-cover.jpg" alt="cover" />
+                                <img src="img/book-cover.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Breaking the Time Barrier</h1></a>
-                                <p><b>Pages: </b>70</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
+                                <a href="#"><h1>Breaking the Time Barrier</h1></a>
+                                <p><b>Platform: </b>PC</p>
+                                <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Business & Finance</p>
+                                <p><b>Genre: </b>Shooter</p>
                                 
                             </div>
                         </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/book-cover.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Breaking the Time Barrier</h1></a>
-                                <p><b>Pages: </b>70</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Business & Finance</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/book-cover.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Breaking the Time Barrier</h1></a>
-                                <p><b>Pages: </b>70</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Business & Finance</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/book-cover.jpg" alt="cover" />
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Breaking the Time Barrier</h1></a>
-                                <p><b>Pages: </b>70</p>
-                                <p><b>Published Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Business & Finance </p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                
+BOOK;
+                    echo $book;
+                    $counter++;
+                    }    	
+                    ?>
                 </div>
             
             
