@@ -1,96 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Download Centre Pro</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="css/grid.css">
-
-<link rel="stylesheet" type="text/css" href="css/fwslider.css">
-<link rel="stylesheet" type="text/css" href="css/respon.css">
-<script type="text/javascript" src="js/fwslidrmini.js"></script>
-</head>
-
-<body>
-
-<header>
-	<div class="header-top container-fluid">
-    <div class="container">
-    
-    	<div class="section-left">
-        	<ul>
-            	<li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="#">New Technology</a></li>
-                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@downloadcentrepro.com</a></li>
-            </ul>
-        </div>
-        
-        <div class="section-right">		
-        	<div class="soial-icon">
-                        <span class="socia-p"><span class="socia-text">Follow us on</span>
-                        <a href="#" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-
-                        </span>
-                  
-                </div>
-        
-        </div>
-    </div>
-    </div>
-    
-    <div class="header-middle container-fluid">
-    <div class="container">
-    	<div class="section-left">
-        	<div class="logo">
-        		<a href="#"><img src="img/logo.jpg" alt="logo"></a>
-        	</div>
-        </div>
-        
-        <div class="section-right">
-        	<div class="header-ad">
-        		<img src="img/header-ad.jpg" alt="ad">
-        	</div>
-        </div>
-    </div>
-    </div>
-    
-    <div class="header-bootom container-fluid">
-    <div class="container">
-    	<div class="section-left">
-    		<nav>
-            	<ul>
-                	<li><a   href="index.html">Home</a></li>
-                     <li><a href="games.html">Games</a></li>
-                    <li><a href="movies.html">Movies </a></li>
-                    <li><a href="books.html">Books </a></li>
-                    <li><a class="active" href="software.html"> software </a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-            	</ul>
-            </nav>
-        </div>
-        
-        <div class="section-right">
-        	<div class="search-box">
-            	<input type="search" placeholder="Search......"/>
-            
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-</header>
+<?php require "./includes/header.php" ?>
 
 <div class="all-page container-fluid">
 <div class="container">
-	<h1>Software</h1>
+	<h1>Movies</h1>
     
     <div class="list-of-items">
             	
@@ -100,12 +12,12 @@
                         	<div class="item-inner">
                             
                         	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            <a href="single-item.html">
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="single-item.html"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -122,11 +34,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -143,11 +55,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -164,11 +76,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -185,11 +97,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -206,31 +118,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
-                                <p><b>Platform: </b>PC</p>
-                                <p><b>Release Date: </b>22 Nov 2016</p>
-                                <p><b>Language:</b> </strong>English</p>
-                                <p><b>Genre: </b>Shooter</p>
-                                
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                		<div class="item">
-                        	<div class="item-inner">
-                            
-                        	<div class="item-img">
-                            <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
-                                </a>
-                            </div>
-                            <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -247,11 +139,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -268,11 +160,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -289,11 +181,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -310,11 +202,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -331,11 +223,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -352,11 +244,11 @@
                             
                         	<div class="item-img">
                             <a href="#">
-                            	<img src="img/windows-10r.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
+                            	<img src="img/star-wars.jpg" alt="Call of Duty Modern Warfare" title="Call of Duty Modern Warfare"/>
                                 </a>
                             </div>
                             <div class="item-info">
-                            	<a href="#"><h1>Windows 10</h1></a>
+                            	<a href="#"><h1>Star Wars: The Force Awakens</h1></a>
                                 <p><b>Platform: </b>PC</p>
                                 <p><b>Release Date: </b>22 Nov 2016</p>
                                 <p><b>Language:</b> </strong>English</p>
@@ -366,6 +258,7 @@
                         </div>
                         </div>
                     </div>
+                    
                     
                     
                     

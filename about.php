@@ -1,106 +1,14 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Download Centre Pro</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="css/grid.css">
-
-<link rel="stylesheet" type="text/css" href="css/fwslider.css">
-<link rel="stylesheet" type="text/css" href="css/respon.css">
-<script type="text/javascript" src="js/fwslidrmini.js"></script>
-</head>
-
-<body>
-
-<header>
-	<div class="header-top container-fluid">
-    <div class="container">
-    
-    	<div class="section-left">
-        	<ul>
-            	<li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="#">New Technology</a></li>
-                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@downloadcentrepro.com</a></li>
-            </ul>
-        </div>
-        
-        <div class="section-right">		
-        	<div class="soial-icon">
-                        <span class="socia-p"><span class="socia-text">Follow us on</span>
-                        <a href="#" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-
-                        </span>
-                  
-                </div>
-        
-        </div>
-    </div>
-    </div>
-    
-    <div class="header-middle container-fluid">
-    <div class="container">
-    	<div class="section-left">
-        	<div class="logo">
-        		<a href="#"><img src="img/logo.jpg" alt="logo"></a>
-        	</div>
-        </div>
-        
-        <div class="section-right">
-        	<div class="header-ad">
-        		<img src="img/header-ad.jpg" alt="ad">
-        	</div>
-        </div>
-    </div>
-    </div>
-    
-    <div class="header-bootom container-fluid">
-    <div class="container">
-    	<div class="section-left">
-    		<nav>
-            	<ul>
-                	<li><a  href="index.html">Home</a></li>
-                     <li><a href="games.html">Games</a></li>
-                    <li><a href="movies.html">Movies </a></li>
-                    <li><a href="books.html">Books </a></li>
-                    <li><a href="software.html"> software </a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-            	</ul>
-            </nav>
-        </div>
-        
-        <div class="section-right">
-        	<div class="search-box">
-            	<input type="search" placeholder="Search......"/>
-            
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-</header>
+<?php require "./includes/header.php" ?>
 
 <div class="inner-page container-fluid">
 <div class="container">
-	<h1>Site Map</h1>
-		<ul class="site-map">
-        	<li><a   href="index.html">Home</a></li>
-             <li><a href="games.html">Games</a></li>
-             <li><a href="movies.html">Movies </a></li>
-             <li><a href="books.html">Books </a></li>
-             <li><a href="software.html"> software </a></li>
-              <li><a href="about.html">About Us</a></li>
-             <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-
+	<h1>About us</h1>
+    
+    <p>Our Download Center is one of the best-known website currently available for downloading movies from online services like Vimeo, Dailymotion, YouTube, Instagram, FunnyorDie, Soundcloud, Metacafe, and tonnes of other multimedia portals. With this highly recommended website, you’ll get to download from practically any movie site.</p>
+    <p>On most websites this website lets you choose the quality you want to view and download movies in, including HD formatting and other lower quality settings options that take up much less space on your memory. That way, all the movies you download will perfectly fit onto your virtual library, organised by download date.</p>
+     <p>Our website also includes access to downloading apps and games.</p>
+    
+    
 </div>
 </div>
 
@@ -198,7 +106,7 @@
 	<div class="footer-copyright container-fluid">
     	<div class="container">
         	<p>© 2017 DEV-TOOLS. All rights reserved. www.Downloadcentrepro.com</p>
-        
+            
     	</div>
     </div>
 
