@@ -1,3 +1,5 @@
+<?php require "./includes/functions.php"; ?>
+
 <!doctype html>
 <html>
 <head>

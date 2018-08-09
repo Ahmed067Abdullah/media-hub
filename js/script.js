@@ -4,7 +4,7 @@ function setActiveClass(){
     //to remove the repeting portions of the path
     path = path.slice(10,path.length-4);
     var classToTurnActive = "";
-    if(path == "index"){
+    if(path == "index" || path == ""){
         classToTurnActive = "home";
     }
     else if(path == "games"){
