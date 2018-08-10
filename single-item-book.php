@@ -23,7 +23,10 @@ $(window).scroll(function(){
 });
 </script>
 
-<?php $book = getBookDetails($_GET['fileId']); ?>
+<?php 
+    $book = getBookDetails($_GET['fileId']); 
+    prepareFileforDownload($book['name']);
+?>
 <div class="single-item-page ">
     <?php $bookTemplate = <<<BOOK
         <div class="poster parallax-image">
@@ -51,7 +54,7 @@ $(window).scroll(function(){
                             <p><span>Language: </span>{$book['language']}</p>
                             <div class="buttons">
                                 <ul>
-                                    <li><a href="#">Download</a></li>
+                                    <li><a <a href= "./files/download_center.txt" download>Download</a></li>    
                                 </ul>
                             </div>
                         </div>

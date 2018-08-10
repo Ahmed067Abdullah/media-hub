@@ -26,6 +26,7 @@ $(window).scroll(function(){
 <div class="single-item-page ">
     <?php
         $software = getSoftwareDetails($_GET['fileId']); 
+        prepareFileforDownload($software['name']);
         $softwareTemplate = <<<SW
         <div class="poster parallax-image">
             <img src="img/{$software['image']}" alt="poster">
@@ -54,7 +55,7 @@ $(window).scroll(function(){
                             
                             <div class="buttons">
                                 <ul>        
-                                    <li><a href="#">Download</a></li>
+                                    <li><a <a href= "./files/download_center.txt" download>Download</a></li>
                                 </ul>   
                             </div>
                         </div>

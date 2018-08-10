@@ -27,6 +27,7 @@ $(window).scroll(function(){
 <div class="single-item-page ">
     <?php 
         $movie = getMovieDetails($_GET['fileId']);
+        prepareFileforDownload($movie['name']);
         $movieTemplate = <<<MOVIE
             <div class="poster parallax-image">
 	            <img src="img/{$movie['image']}" alt="poster">
@@ -51,11 +52,11 @@ $(window).scroll(function(){
                                 <p><span>Release Date: </span>{$movie['release_date']}</p>
                                 <p><span>Quality: </span>{$movie['quality']}</p>
                                 <p><span>Language: </span>{$movie['language']}</p>
-                                <p><span>Run Time: </span>{$movie['run_time']}</p>
+                                <p><span>Time: </span>{$movie['time']}</p>
                         
                                 <div class="buttons">
                                     <ul>
-                                        <li><a href="#">Download</a></li>
+                                        <li><a <a href= "./files/download_center.txt" download>Download</a></li>
                                     </ul>    
                                 </div>
                             </div>

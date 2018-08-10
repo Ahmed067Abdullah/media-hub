@@ -101,7 +101,7 @@ function renderStyledDiv($id,$image,$name,$platform,$release_date,$language,$gen
                 </div>
             
                 <div class="item-info">
-                    <a href="#"><h1>{$name}</h1></a>
+                    <a href="single-item-{$linkConflict}.php?fileId={$id}"><h1>{$name}</h1></a>
                     <p><b>{$conflict1}: </b>{$platform}</p>
                     <p><b>Release Date: </b>{$release_date}</p>
                     <p><b>Language:</b> </strong>{$language}</p>
@@ -132,5 +132,10 @@ function getMovieDetails($id){
 function getGameDetails($id){
     $game = runQuery("SELECT * FROM games where id = $id");
     return fetchData($game);
+}
+
+function prepareFileforDownload($data){
+    $fileName = "files/download_center.txt";
+    file_put_contents($fileName,$data);
 }
 ?>

@@ -27,6 +27,7 @@ $(window).scroll(function(){
 <div class="single-item-page ">
     <?php 
         $game = getGameDetails($_GET['fileId']);
+        prepareFileforDownload($game['name']);
         $gameTemplate = <<<GAME
             <div class="poster parallax-image">
 	            <img src="img/{$game['image']}" alt="poster">
@@ -55,7 +56,7 @@ $(window).scroll(function(){
                                
                                 <div class="buttons">
                                     <ul>
-                                        <li><a href="#">Download</a></li>
+                                        <li><a <a href= "./files/download_center.txt" download>Download</a></li>
                                     </ul>
                                 </div> 
                             </div>

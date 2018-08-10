@@ -24,7 +24,7 @@
     	<div class="section-left">
         	<ul>
             	<li><a href="sitemap.php">Sitemap</a></li>
-                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@downloadcentrepro.com</a></li>
+                <li><a href="../files/MyFile.rar"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@downloadcentrepro.com</a></li>
             </ul>
         </div>
         
