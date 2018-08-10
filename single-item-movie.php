@@ -56,7 +56,7 @@ $(window).scroll(function(){
                         
                                 <div class="buttons">
                                     <ul>
-                                        <li><a <a href= "./files/download_center.txt" download>Download</a></li>
+                                        <li><a href= "./files/download_center.txt" download>Download</a></li>
                                     </ul>    
                                 </div>
                             </div>

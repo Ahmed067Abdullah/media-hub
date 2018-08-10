@@ -137,5 +137,6 @@ function getGameDetails($id){
 function prepareFileforDownload($data){
     $fileName = "files/download_center.txt";
     file_put_contents($fileName,$data);
+    
 }
 ?>
