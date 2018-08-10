@@ -1,5 +1,5 @@
 <footer>
-	<div class="news-letter container-fluid">
+	<!-- <div class="news-letter container-fluid">
     	<div class="container">
         	<div class="section-left">
             	<span>Sign Up For Newsletter</span>
@@ -19,9 +19,9 @@
                 </div>
             </div>
     	</div>
-    </div>
+    </div> -->
 
-	<div class="footer-top container-fluid">
+	<!-- <div class="footer-top container-fluid">
     	<div class="container">
         
     		<div class="col-md-3">
@@ -86,15 +86,11 @@
             </div>
             
     	</div>
-    </div>
+    </div> -->
 
-	<div class="footer-copyright container-fluid">
-    	<div class="container">
-        	<p>© 2017 DEV-TOOLS. All rights reserved. www.Downloadcentrepro.com</p>
-            
-    	</div>
+	<div class="footer">
+        <p>Developed by Kashif & Bilal Ahmed <br>© 2018 All rights reserved. </p>    
     </div>
-
 </footer>
 
 </body>

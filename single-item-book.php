@@ -23,267 +23,53 @@ $(window).scroll(function(){
 });
 </script>
 
-
+<?php $book = getBookDetails($_GET['fileId']); ?>
 <div class="single-item-page ">
-<div class="poster parallax-image">
-	<img src="img/books-poster.jpg" alt="poster">
-</div>
-<div class="container">
-		<div class="single-item">
-        	<div class="single-item-inner">
-        		<div class="detail">
-        			<div class="section-left">
-                    	
-                        <div class="cover-img">
-                        	<img src="img/book-cover.jpg" alt="cover"/>
+    <?php $bookTemplate = <<<BOOK
+        <div class="poster parallax-image">
+            <img src="img/{$book['image']}" alt="poster">
+        </div>
+
+        <div class="container">
+            <div class="single-item">
+                <div class="single-item-inner">
+                    <div class="detail">
+                        <div class="section-left">
+                            <div class="cover-img">
+                                <img src="img/{$book['image']}" alt="cover"/>
+                            </div>
                         </div>
-                    
-                    </div>
-                    <div class="section-right">
-                		<h1>Breaking the Time Barrier</h1>
+
+                        <div class="section-right">
+                            <h1>{$book['name']}</h1>
                         
-                        <ul>
-                        	
-                            <li><a href="#">Business & Finance</a></li>
-                            
-                        </ul>
-                    
+                            <div class="clear"></div>
+                        
+                            <p><span>Author: </span>{$book['author']}</p>
+                            <p><span>Pages: </span>{$book['pages']}</p>
+                            <p><span>Published Date: </span>{$book['release_date']}</p>
+                            <p><span>Language: </span>{$book['language']}</p>
+                            <div class="buttons">
+                                <ul>
+                                    <li><a href="#">Download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
                     <div class="clear"></div>
                     
-                    <p><span>Author: </span>Mike McDerment</p>
-                    <p><span>Pages: </span> 70</p>
-                    <p><span>Published Date: </span> 	July 29, 2015</p>
-                    <p><span>Language: </span> English</p>
-                   
-                    
-                    <div class="buttons">
-                	<ul>
-                		
-                        <li><a href="#">Download</a></li>
-                    </ul>
-                    
-                    <!-- The Modal trailer -->
-                        <div id="myModal" class="modal">
-                        
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <div class="iframe embed-container">
-                            
-                           <iframe src="https://www.youtube.com/embed/A2xM2F9cfnI" frameborder="0" allowfullscreen></iframe>
-                            
-                            </div>
-                          </div>
-                        
-                        </div>
-                        
-                        <!-- The Modal trailer end -->
-                        
-                          <!-- The Modal movie -->
-                        <div id="myModal-1" class="modal1">
-                        
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                            <span class="close1">&times;</span>
-                            <div class="iframe embed-container">
-                            
-                            <iframe id="iframe-embed" scrolling="no" src="https://streamango.com/embed/atpcdosprdmampcf/Star_Wars_Episode_VII_The_Force_Awakens_2015_720p_BluRay_mp4" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                            
-                            
-                            </div>
-                          </div>
-                        
-                        </div>
-                        
-                        <!-- The Modal movie end -->
-                        
-                        
-                </div>
-                  
-                    </div>
-                </div>
-                
-                <div class="clear"></div>
-                
-                <div class="dec">
-                	<h1>Book Description:</h1>
-       
-                	<p>Most freelancers and small business owners struggle with putting a price on their services. Many end up using a pricing model that leaves them run ragged trying to pay the bills, rather than one that lets them build a healthy, sustainable business.
-
-If you’re quoting clients an hourly rate for your services, chances are you’re hurting your business… even if that hourly rate was methodically calculated. That’s because you can really only charge so much per hour and there are only so many hours in a week, putting a limit on how much you can earn. Problem is—that limit usually has nothing to do with how valuable your services are.
-
-There’s a better way to approach your pricing and building your business, a way that’s fair to both you and your clients. In this book you’ll learn how to significantly increase your income by charging what you’re really worth. You’ll discover that value-based pricing is not about putting a bigger price tag on your work. It’s about fundamentally changing the way you work with your clients, a way that opens the door to bigger and better results for the both of you.
-
-This incredibly simple book that you can read in just one hour, will show you how to be rewarded for all your skills, talents, wisdom and creativity.</p>
-                    
-                    
-                    
-                </div>
-                	
-                
-        	</div>
-        </div>
-    
-</div>
-</div>
-
-
-<footer>
-	<div class="news-letter container-fluid">
-    	<div class="container">
-        	<div class="section-left">
-            	<span>Sign Up For Newsletter</span>
-                <input class="email" type="email" placeholder="Email Address">
-                <input class="btn" type="submit" value="Subscribe Now"> 
-            
-            </div>
-        	<div class="section-right">
-            	<div class="soial-icon">
-                        <span class="socia-p"><span class="socia-text"></span>
-                        <a href="#" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                        <a href="#" ><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                        </span>
-                  
-                </div>
-            </div>
-    	</div>
-    </div>
-
-	<div class="footer-top container-fluid">
-    	<div class="container">
+                    <div class="dec">
+                        <h1>Book Description:</h1>
         
-    		<div class="col-md-3">
-            	<span><i class="fa fa-location-arrow" aria-hidden="true"></i> GAMES COLLECTION</span>
-            	<ul>
-            		<li><a href="#">BATMAN GAME</a></li>
-                    <li><a href="#"> TENNIS GAME</a></li>
-                    <li><a href="#">CRICKET GAME</a></li>
-                </ul>
-                
-                <span><i class="fa fa-location-arrow" aria-hidden="true"></i> SOFTWARE COLLECTION</span>
-                <ul>
-            		<li><a href="#">MICROSOFT OFFICE</a></li>
-                    <li><a href="#">ADOBE PHOTOSHOP</a></li>
-                    <li><a href="#">ADOBE ILLISTRATOR</a></li>
-                    <li><a href="#">FILEZILLA (FTP SERVER)</a></li>
-                    <li><a href="#">ANTIVURS AVAST</a></li>
-                    <li><a href="#">SMS CASTER</a></li>
-                </ul>
+                        <p>{$book['description']}</p>                    
+                    </div> 
+                </div>
             </div>
-            <div class="col-md-3">
-            	<span><i class="fa fa-location-arrow" aria-hidden="true"></i> BOOKS</span>
-            	<ul>
-            		<li><a href="#">THE GREAT MAN</a></li>
-                    <li><a href="#">SUCESS QUOTES</a></li>
-                    <li><a href="#">CRICKET GAME</a></li>
-                    <li><a href="#">POWER BROKE</a></li>
-                    <li><a href="#">RICK (TC)</a></li>
-                </ul>
-                
-                <span><i class="fa fa-location-arrow" aria-hidden="true"></i>   FILMS</span>
-                <ul>
-            		<li><a href="#">BAYWATCH</a></li>
-                    <li><a href="#">AVATAR</a></li>
-                    <li><a href="#">THE LEGAND MAN</a></li>
-                    <li><a href="#">FORCE STOP</a></li>
-                </ul>
-            
-            </div>
-            <div class="col-md-3">
-            
-            	<span><i class="fa fa-location-arrow" aria-hidden="true"></i> ARTICLE</span>
-            	<ul>
-            		<li><a href="#">SOCIAL MEDIA GROUP</a></li>
-                    <li><a href="#">BLACK HAT STRATEGY</a></li>
-                    <li><a href="#">ICM TAG YORK</a></li>
-                    <li><a href="#">BROCK LESNER</a></li>
-                </ul>
-                
-                <span><i class="fa fa-location-arrow" aria-hidden="true"></i>  CONTESTS</span>
-                <ul>
-            		<li><a href="#">DESIGNING</a></li>
-                    <li><a href="#">APPLICATIONS</a></li>
-                    <li><a href="#">ICONS</a></li>
-                    <li><a href="#">SCRIPTS</a></li>
-                </ul>
-            
-            </div>
-            <div class="col-md-3">
-            	<h2>Download centre pro</h2>
-            	<p>FREE DOWNLOAD SITE FOR ALL USERS AND DEVELOPERS TO ENJOY FREE SOFTWARE ANDTOOLS, API, TUTORIALS, GAMES, BOOKS, FILMS, CONTESTS, WITHALL LATEST TECHNOLOGIES.....</p>
-            </div>
-            
-    	</div>
-    </div>
+        </div>
+BOOK;
+    echo $bookTemplate;
+    ?>
+</div>
 
-	<div class="footer-copyright container-fluid">
-    	<div class="container">
-        	<p>© 2017 DEV-TOOLS. All rights reserved. www.Downloadcentrepro.com</p>
-            
-    	</div>
-    </div>
-
-</footer>
-
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
-
-<script>
-// Get the modal
-var modal1 = document.getElementById('myModal-1');
-
-// Get the button that opens the modal
-var btn1 = document.getElementById("myBtn-1");
-
-// Get the <span> element that closes the modal
-var span1 = document.getElementsByClassName("close1")[0];
-
-// When the user clicks the button, open the modal 
-btn1.onclick = function() {
-    modal1.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
-    modal1.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal1) {
-        modal1.style.display = "none";
-    }
-}
-</script>
-</body>
-</html>
-
+<?php require "./includes/footer.php"?>

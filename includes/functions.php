@@ -26,7 +26,7 @@ function showGames($count = null){
     $games = runQuery("SELECT * FROM games ORDER by id DESC {$limit} ");
 
     while($row = fetchData($games)){
-        renderStyledDiv($row['image'],$row['name'],$row['platform'],$row['release_date'],$row['language'],$row['genre'],0);
+        renderStyledDiv($row['id'],$row['image'],$row['name'],$row['platform'],$row['release_date'],$row['language'],$row['genre'],0);
     }
 } 
 
@@ -37,7 +37,7 @@ function showMovies($count = null){
     $games = runQuery("SELECT * FROM movies ORDER by id DESC {$limit} ");
 
     while($row = fetchData($games)){
-        renderStyledDiv($row['image'],$row['name'],$row['lead_role'],$row['release_date'],$row['language'],$row['genre'],1);
+        renderStyledDiv($row['id'],$row['image'],$row['name'],$row['lead_role'],$row['release_date'],$row['language'],$row['genre'],1);
     }
 }
 
@@ -48,7 +48,7 @@ function showBooks($count = null){
     $games = runQuery("SELECT * FROM books ORDER by id DESC {$limit} ");
 
     while($row = fetchData($games)){
-        renderStyledDiv($row['image'],$row['name'],$row['author'],$row['release_date'],$row['language'],$row['genre'],2);
+        renderStyledDiv($row['id'],$row['image'],$row['name'],$row['author'],$row['release_date'],$row['language'],$row['genre'],2);
     }
 }
 
@@ -59,7 +59,7 @@ function showSoftwares($count = null){
     $games = runQuery("SELECT * FROM softwares ORDER by id DESC {$limit} ");
 
     while($row = fetchData($games)){
-        renderStyledDiv($row['image'],$row['name'],$row['platform'],$row['release_date'],$row['language'],$row['developed_by'],3);
+        renderStyledDiv($row['id'],$row['image'],$row['name'],$row['platform'],$row['release_date'],$row['language'],$row['developed_by'],3);
     }
 }
 
@@ -69,25 +69,33 @@ function showSoftwares($count = null){
 // 2 => Books 
 // 3 => Softwares
 
-function renderStyledDiv($image,$name,$platform,$release_date,$language,$genre,$type){
-    if($type == 1)
+function renderStyledDiv($id,$image,$name,$platform,$release_date,$language,$genre,$type){
+    if($type == 1){
         $conflict1 = "Lead Role";
-    else if($type == 2)
+        $linkConflict = "movie";
+    }else if($type == 2){
         $conflict1 = "Author";
-    else
+        $linkConflict = "book";
+    }else{
         $conflict1 = "Platform";
+        if($type == 0)
+            $linkConflict = "game";
+    }
+
         
-    if($type == 3)
+    if($type == 3){
         $conflict2 = "Developed By";
-    else
+        $linkConflict = "software";
+    }else
     $conflict2 = "Genre";
     
+
     $content = <<<CONTENT
     <div class="col-md-2">
         <div class="item">
             <div class="item-inner">
                 <div class="item-img">
-                    <a href="#">
+                    <a href="single-item-{$linkConflict}.php?fileId={$id}">
                         <img src="img/{$image}" />
                     </a>
                 </div>
@@ -104,5 +112,25 @@ function renderStyledDiv($image,$name,$platform,$release_date,$language,$genre,$
     </div>
 CONTENT;
     echo $content;
+}
+
+function getBookDetails($id){
+    $book = runQuery("SELECT * FROM books where id = $id");
+    return fetchData($book);
+}
+
+function getSoftwareDetails($id){
+    $software = runQuery("SELECT * FROM softwares where id = $id");
+    return fetchData($software);
+}
+
+function getMovieDetails($id){
+    $movie = runQuery("SELECT * FROM movies where id = $id");
+    return fetchData($movie);
+}
+
+function getGameDetails($id){
+    $game = runQuery("SELECT * FROM games where id = $id");
+    return fetchData($game);
 }
 ?>

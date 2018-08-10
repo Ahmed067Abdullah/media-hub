@@ -26,53 +26,54 @@ $(window).scroll(function(){
 
 <div class="single-item-page ">
     <?php 
-        $game = getGameDetails($_GET['fileId']);
-        $gameTemplate = <<<GAME
+        $movie = getMovieDetails($_GET['fileId']);
+        $movieTemplate = <<<MOVIE
             <div class="poster parallax-image">
-	            <img src="img/{$game['image']}" alt="poster">
+	            <img src="img/{$movie['image']}" alt="poster">
             </div>
-
+            
             <div class="container">
 		        <div class="single-item">
         	        <div class="single-item-inner">
         		        <div class="detail">
-        			        <div class="section-left">	
+        			        <div class="section-left">
                                 <div class="cover-img">
-                                    <img src="img/{$game['image']}" alt="cover"/>
+                        	        <img src="img/{$movie['image']}" alt="cover"/>
                                 </div>
                             </div>
-                    
+                        
                             <div class="section-right">
-                		        <h1>{$game['name']}</h1>
-                    
+                                <h1>{$movie['name']}</h1>
+                        
                                 <div class="clear"></div>
-                    
-                                <p><span>Developer: </span> {$game['developed_by']}</p>
-                                <p><span>Plateform: </span>  {$game['platform']}</p>
-                                <p><span>Release Date: </span>{$game['release_date']}</p>
-                                <p><span>Language: </span>{$game['language']}</p>
-                                <p><span>Size: </span>{$game['size']}</p>
-                               
+                        
+                                <p><span>Director: </span>{$movie['director']}</p>
+                                <p><span>Release Date: </span>{$movie['release_date']}</p>
+                                <p><span>Quality: </span>{$movie['quality']}</p>
+                                <p><span>Language: </span>{$movie['language']}</p>
+                                <p><span>Run Time: </span>{$movie['run_time']}</p>
+                        
                                 <div class="buttons">
                                     <ul>
                                         <li><a href="#">Download</a></li>
-                                    </ul>
-                                </div> 
+                                    </ul>    
+                                </div>
                             </div>
                         </div>
                 
                         <div class="clear"></div>
-                
+                    
                         <div class="dec">
-                	        <h1>Storyline:</h1>
-                	        <p>{$game['description']}</p>
+                            <h1>Storyline:</h1>
+                            <p>{$movie['description']}</p>
                         </div>
-        	        </div>
+                    </div>
                 </div> 
             </div>
-GAME;
-    echo $gameTemplate;
-    ?>        
-</div>    
+MOVIE;
+    echo $movieTemplate;
+    ?>
+</div>
 
-<?php require "./includes/footer.php"; ?>
+<?php require "./includes/footer.php";?>
+

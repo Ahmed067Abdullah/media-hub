@@ -61,31 +61,31 @@
         </div>
     </div>
     </div> -->
-    
-    <div class="header-bootom container-fluid">
-    <div class="container">
-    	<div class="section-left">
-    		<nav>
-            	<ul>
-                	<li><a href="index.php" class ="home-page-link">Home</a></li>
-                      <li><a href="games.php" class ="games-page-link">Games</a></li>
-                    <li><a href="movies.php" class ="movies-page-link">Movies </a></li>
-                    <li><a  href="books.php" class ="books-page-link">Books </a></li>
-                    <li><a href="software.php" class ="softwares-page-link"> Softwares </a></li>
-                    <li><a href="about.php" class ="about-page-link">About Us</a></li>
-                    <li><a href="contact.php" class ="contact-page-link">Contact Us</a></li>
-            	</ul>
-            </nav>
-        </div>
-        
-        <div class="section-right">
-        	<div class="search-box">
-            	<input type="search" placeholder="Search......"/>
-            
+    <div class = "header-fixed">
+        <div class="header-bootom container-fluid">
+            <div class="container">
+                <div class="section-left">
+                    <nav>
+                        <ul>
+                            <li><a href="index.php" class ="home-page-link">Home</a></li>
+                            <li><a href="games.php" class ="games-page-link">Games</a></li>
+                            <li><a href="movies.php" class ="movies-page-link">Movies </a></li>
+                            <li><a  href="books.php" class ="books-page-link">Books </a></li>
+                            <li><a href="software.php" class ="softwares-page-link"> Softwares </a></li>
+                            <li><a href="about.php" class ="about-page-link">About Us</a></li>
+                            <li><a href="contact.php" class ="contact-page-link">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="section-right">
+                    <div class="search-box">
+                        <input type="search" placeholder="Search......"/>
+                    
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-
 
 </header>
