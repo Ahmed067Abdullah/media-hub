@@ -139,4 +139,74 @@ function prepareFileforDownload($data){
     file_put_contents($fileName,$data);
     
 }
+
+function getSearchResults($value,$flag=0){
+
+
+    if (strlen($value) == 0) {
+        echo " ";
+    }else{
+    $value = strtolower($value);
+        
+    $dataMovie = runQuery("SELECT * from movies where lower(name) like '$value%'");
+    $dataGame = runQuery("SELECT * from games where lower(name) like '$value%'");
+    $dataSoftware = runQuery("SELECT * from softwares where lower(name) like '$value%'");
+    $dataBook = runQuery("SELECT * from books where lower(name) like '$value%'");
+
+
+    $content = '';
+    $isData = false;
+
+    if(dataFetched($dataMovie)){
+            $isData = true;
+            getSearchData($dataMovie,'movie');
+    }
+    if(dataFetched($dataGame)){
+        $isData = true;
+        getSearchData($dataGame,'game');
+
+    }
+    if(dataFetched($dataSoftware)){
+        $isData = true;
+        getSearchData($dataSoftware,'software');
+
+    }
+    if(dataFetched($dataBook)){
+        $isData = true;
+        getSearchData($dataBook,'book');
+        
+
+    }
+
+    if(!$isData){
+        echo 'No';
+    }
+ }
+}
+
+function getSearchData($data,$conflict){
+    while($row = fetchData($data)){
+
+        $row['image'] = "./img/" . $row['image'];
+        $id = $row['id'];
+
+        $user = <<<DELIMETER
+    <div class='search-person-container'>
+        <a href="single-item-{$conflict}.php?fileId={$id}"  class='search-person'>
+            <span class='search-person-image'>
+    <img src='{$row['image']}' class='post-avatar post-avatar-30'/>
+    </span>
+    <span class='search-person-info'>
+    <span class='person-name'>{$row['name']}</span>
+    </span>
+    </a>
+    </div>
+DELIMETER;
+
+        echo $user;
+    }
+}
+
 ?>
+
+

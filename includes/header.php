@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" href="./css/search.css">
 
 <link rel="stylesheet" type="text/css" href="css/fwslider.css">
 <link rel="stylesheet" type="text/css" href="css/respon.css">
@@ -80,12 +81,15 @@
                 
                 <div class="section-right">
                     <div class="search-box">
-                        <input type="search" placeholder="Search......"/>
+                    <input type="text" class="search-input" placeholder="Search" onkeyup="getData(this.value)" name="query" autocomplete = "off" >
                     
                     </div>
+                    <div class='search-result'></div>
                 </div>
             </div>
         </div>
     </div>
 
 </header>
+
+<script src='../js/script.js'></script>
