@@ -9,5 +9,5 @@
         <p>Our website also includes access to downloading apps and games.</p>
     </div>
 </div>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <?php require "./includes/footer.php" ?>
