@@ -140,6 +140,8 @@ function prepareFileforDownload($data){
     
 }
 
+
+
 function getSearchResults($value,$flag=0){
 
 
@@ -148,10 +150,10 @@ function getSearchResults($value,$flag=0){
     }else{
     $value = strtolower($value);
         
-    $dataMovie = runQuery("SELECT id,image,name from movies where lower(name) like '$value%'");
-    $dataGame = runQuery("SELECT id,image,name from games where lower(name) like '$value%'");
-    $dataSoftware = runQuery("SELECT id,image,name from softwares where lower(name) like '$value%'");
-    $dataBook = runQuery("SELECT id,image,name from books where lower(name) like '$value%'");
+    $dataMovie = searchQueryData('movies',$value);
+    $dataGame = searchQueryData('games',$value);
+    $dataSoftware = searchQueryData('softwares',$value);
+    $dataBook = searchQueryData('books',$value);
 
 
     $content = '';
@@ -182,6 +184,10 @@ function getSearchResults($value,$flag=0){
         echo 'No';
     }
  }
+}
+
+function searchQueryData($table,$value){
+    return runQuery("SELECT id,image,name from $table where lower(name) like '$value%'");
 }
 
 function getSearchData($data,$conflict){
