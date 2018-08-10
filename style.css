@@ -183,6 +183,12 @@ table {
 	font-style: normal;
 }
 
+header {
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+}
+
 .header-top {
 	background-color: #920016;
 	padding-top: 15px;
@@ -992,7 +998,6 @@ footer .news-letter .section-right .soial-icon a:hover {
 
 .all-page {
 	padding-top: 25px;
-	padding-bottom: 30px;
 }
 
 .all-page h1 {
@@ -1235,4 +1240,9 @@ footer .news-letter .section-right .soial-icon a:hover {
 	background-color: black;
 	color: white;
 	line-height: 30px;
+	margin-top: -20px;
+}
+
+.top-heading {
+	margin: 20px 0;
 }

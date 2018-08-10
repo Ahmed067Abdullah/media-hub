@@ -20,7 +20,7 @@
 
 <header>
 	<div class="header-top container-fluid">
-    <div class="container">
+    <div class="container-header">
     
     	<div class="section-left">
         	<ul>
@@ -64,7 +64,7 @@
     </div> -->
     <div class = "header-fixed">
         <div class="header-bootom container-fluid">
-            <div class="container">
+            <div class="container-header">
                 <div class="section-left">
                     <nav>
                         <ul>

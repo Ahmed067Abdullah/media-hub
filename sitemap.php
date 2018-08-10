@@ -1,8 +1,8 @@
 <?php require "./includes/header.php" ?>
 
-<div class="inner-page container-fluid">
+<div class="inner-page container-fluid" style='height:532px;'>
         <div class="container">
-	        <h1>Site Map</h1>
+	        <h1 class='top-heading' >Site Map</h1>
           
                 <ul class="site-map">
                         <li><a href="index.html">Home</a></li>

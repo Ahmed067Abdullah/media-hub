@@ -2,7 +2,7 @@
 
 <div class="all-page container-fluid">
     <div class="container">
-	    <h1>Movies</h1>
+	    <h1 class='top-heading'>Movies</h1>
     
         <div class="list-of-items">        	
             <div class="row">

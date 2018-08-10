@@ -2,7 +2,7 @@
 
 <div class="all-page container-fluid">
     <div class="container">
-	    <h1>Software</h1>
+	    <h1 class='top-heading'>Software</h1>
     
         <div class="list-of-items">	
             <div class="row">

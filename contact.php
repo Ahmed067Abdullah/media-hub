@@ -10,9 +10,9 @@
     }
 ?>
 
-<div class="contact-page container-fluid">
-    <div class="container">
-	    <h1>Contact Us</h1>
+<div class="contact-page container-fluid" style='height:527px;'>
+    <div class="container" >
+	    <h1 class='top-heading'>Contact Us</h1>
             
         <div class="contact-section"> 
             <div class="contact-form">
@@ -35,5 +35,5 @@
         </div>
     </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <?php require "./includes/footer.php" ?>
