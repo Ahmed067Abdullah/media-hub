@@ -148,10 +148,10 @@ function getSearchResults($value,$flag=0){
     }else{
     $value = strtolower($value);
         
-    $dataMovie = runQuery("SELECT * from movies where lower(name) like '$value%'");
-    $dataGame = runQuery("SELECT * from games where lower(name) like '$value%'");
-    $dataSoftware = runQuery("SELECT * from softwares where lower(name) like '$value%'");
-    $dataBook = runQuery("SELECT * from books where lower(name) like '$value%'");
+    $dataMovie = runQuery("SELECT id,image,name from movies where lower(name) like '$value%'");
+    $dataGame = runQuery("SELECT id,image,name from games where lower(name) like '$value%'");
+    $dataSoftware = runQuery("SELECT id,image,name from softwares where lower(name) like '$value%'");
+    $dataBook = runQuery("SELECT id,image,name from books where lower(name) like '$value%'");
 
 
     $content = '';
