@@ -88,7 +88,7 @@ function renderStyledDiv($image,$name,$platform,$release_date,$language,$genre,$
             <div class="item-inner">
                 <div class="item-img">
                     <a href="#">
-                        <img src="{$image}" />
+                        <img src="img/{$image}" />
                     </a>
                 </div>
             
